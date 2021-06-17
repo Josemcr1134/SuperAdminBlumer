@@ -1,0 +1,57 @@
+<div class="pqrForm">
+    <div class="contenedor d-flex">
+        <div class="fondo">
+            <div class="imagen align-middle text-center">
+                <img src="../assets/logo.png" class="text-center align-middle " alt="">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container-form">
+        <h2 class="title">Solicitud de PQRS</h2>
+
+        <p>Escriba sus datos y el detalle de la solicitud. Asegúrese de dejar la información necesaria para responderle.</p>
+
+        <div class="form">
+            <form [formGroup]="PQRform" (ngSubmit)="enviarMensaje()">
+
+
+                <div class="mb-3">
+                    <label class="form-label">EMAIL</label>
+                    <input type="email" class="form-control" formControlName="email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">TELEFONO</label>
+
+                    <input type="tel" class="form-control" formControlName="username" placeholder="Numero telefónico registrado en la app " required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">TIPO DE USARIO</label>
+                    <select id="disabledSelect" class="form-control" class="form-select" formControlName="userType" required>
+                <option value='1' >Usuario</option>
+                <option value='2' >Domi</option>
+              </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">ASUNTO</label>
+                    <select class="form-select" formControlName="pqr" required>
+                      <option  value="1" >Peticiones</option>
+                      <option  value="2">Queja</option>
+                      <option value="3">Reclamo</option>
+                      <option value="4">Felicitaciones</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">MENSAJE</label>
+                    <textarea formControlName="description" class="form-control" rows="3" required></textarea>
+                </div>
+                <div class="form-group col-12 third-row mb-1 ">
+                    <button type="submit" [disabled]="PQRform.invalid" class="btn btn-primar">Enviar</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
