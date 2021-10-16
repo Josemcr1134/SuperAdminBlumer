@@ -1,0 +1,129 @@
+<div class="leftside-menu leftside-menu-detached show" style="height: 90vh;">
+
+    <div class="leftbar-user">
+        <a href="javascript: void(0);">
+            <img src="assets/images/superadminprofile.jfif" alt="user-image" height="42" class="rounded-circle shadow-sm">
+            <span class="leftbar-user-name">Ernesto Ruiz</span>
+        </a>
+    </div>
+
+    <!--- Sidemenu -->
+    <ul class="side-nav">
+
+        <li class="side-nav-item">
+            <a [routerLink]="['/Dashboard']" routerLinkActive="active" class="side-nav-link">
+                <i class=" uil-analytics"></i>
+                <span> Métricas  </span>
+            </a>
+        </li>
+
+        <li class="side-nav-item">
+            <a [routerLink]="['/Dashboard/UsersBD']" routerLinkActive="active" class="side-nav-link">
+                <i class="uil-calender"></i>
+                <span> Usuarios </span>
+            </a>
+        </li>
+
+        <li class="side-nav-item">
+            <a data-bs-toggle="collapse" href="#sidebarDashboards" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+
+                <i class="uil-home-alt"></i>
+                <span class="badge bg-success float-end">5</span>
+                <span> Transacciones  </span>
+            </a>
+            <div class="collapse" id="sidebarDashboards">
+                <ul class="side-nav-second-level">
+                    <li>
+                        <a [routerLink]="['/Dashboard/General-Transactions']" routerLinkActive="active">General</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/Dashboard/Donations-Transactions']" routerLinkActive="active">Donaciones</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/Dashboard/Wallet-Transactions']" routerLinkActive="active">Wallet</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/Dashboard/QR-Transactions']" routerLinkActive="active">QR</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/Dashboard/Advertisements-Transactions']" routerLinkActive="active">Publicidad</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+
+
+        <li class="side-nav-item">
+            <a [routerLink]="['/Dashboard/Campaings']" routerLinkActive="active" class="side-nav-link">
+                <i class="uil-presentation-line"></i>
+                <span> Campañas </span>
+            </a>
+        </li>
+
+        <li class="side-nav-item">
+            <a [routerLink]="['/Dashboard/Reported-Posts']" routerLinkActive="active" class="side-nav-link">
+                <i class=" uil-image-times"></i>
+                <span> Post Reportes </span>
+            </a>
+        </li>
+
+        <li class="side-nav-item">
+            <a [routerLink]="['/Dashboard/MarketPlace']" routerLinkActive="active" class="side-nav-link">
+                <i class="uil-comments-alt"></i>
+                <span> MarketPlace </span>
+            </a>
+        </li>
+
+        <li class="side-nav-item">
+            <a [routerLink]="['/Dashboard/Company']" routerLinkActive="active" class="side-nav-link">
+                <i class="uil-money-stack"></i>
+                <span> Empresas </span>
+            </a>
+        </li>
+
+        <li class="side-nav-item">
+            <a [routerLink]="['/Dashboard/Sales']" routerLinkActive="active" class="side-nav-link">
+                <i class=" uil-usd-square"></i>
+                <span> Ventas </span>
+            </a>
+        </li>
+    </ul>
+
+    <!-- Help Box -->
+
+    <!-- end Help Box -->
+    <!-- End Sidebar -->
+
+    <div class="clearfix"></div>
+    <!-- Sidebar -left -->
+
+
+
+    <!--   <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarDashboards" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                    <i class="uil-home-alt"></i>
+                    <span class="badge bg-success float-end">5</span>
+                    <span> Transacciones  </span>
+                </a>
+                <div class="collapse" id="sidebarDashboards">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="dashboard-analytics.html">General</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-crm.html">Donaciones</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Wallet</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-projects.html">QR</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-projects.html">Publicidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </li> -->
+</div>

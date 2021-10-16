@@ -1,0 +1,166 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="header-title">Base de datos de - "Empresa 1"</h4>
+        <p class="text-muted font-14">
+            Editaloas , cambia su contraseña o sumale puntos en su wallet y saldo para pautas
+        </p>
+
+        <ul class="nav nav-tabs nav-bordered mb-3">
+            <li class="nav-item">
+                <a href="#data-base-company" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+                    Base de datos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#change-password-company" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                    Cambiar Contraseña
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#wallet-company" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                    Wallet
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#money-company" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                    Saldo
+                </a>
+            </li>
+        </ul>
+        <!-- end nav-->
+
+        <div class="tab-content">
+            <div class="tab-pane show active" id="data-base-company">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="simpleinput" class="form-label">Nombre</label>
+                                <input type="text" id="simpleinput" placeholder="Nombre del representante empresa" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="simpleinput" class="form-label">Nombre de usuario</label>
+                                <input type="text" id="simpleinput" placeholder="Nombre de usuario de la emprea" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="example-email" class="form-label">Correo electrónico</label>
+                                <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Correo electrónico">
+                            </div>
+                            <div class="mb-3">
+                                <label for="NIT" class="form-label">NIT</label>
+                                <input type="number" id="NIT" name="NIT" class="form-control" placeholder="NIT de la empresa">
+                            </div>
+
+
+
+
+
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="simpleinput" class="form-label">Apellido</label>
+                                <input type="text" id="simpleinput" placeholder="Apellido del representante de la empresa" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="example-date" class="form-label">Fecha de nacimiento</label>
+                                <input class="form-control" id="example-date" type="date" name="date">
+                            </div>
+                            <div class="mb-3">
+                                <label for="example-palaceholder" class="form-label">Numero telefónico</label>
+                                <input type="number" id="example-palaceholder" class="form-control" placeholder="Numero telefónico">
+                            </div>
+                            <div class="mb-3">
+                                <label for="example-readonly" class="form-label">Código de referido</label>
+                                <input type="text" id="example-readonly" placeholder="Código de referido" class="form-control">
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="mt-3">
+                            <div class="btn btn-sm btn-primary rounded-1">Confirmar</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row-->
+            </div>
+            <!-- end preview-->
+
+            <div class="tab-pane" id="change-password-company">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="mb-3">
+                        <label for="example-password" class="form-label">Nueva contraseña</label>
+                        <input type="text" id="example-password" class="form-control" placeholder="Nueva contraseña">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Confirma la nueva contraseña</label>
+                        <div class="input-group input-group-merge">
+                            <input type="password" id="password" class="form-control" placeholder="Confirma la nueva contraseña">
+                            <div class="input-group-text" data-password="false">
+                                <span class="password-eye"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="btn btn-sm btn-primary rounded-1">Confirmar</div>
+                    </div>
+
+                </div>
+
+
+                <!-- end highlight-->
+            </div>
+            <div class="tab-pane" id="wallet-company">
+                <div class="row">
+                    <div class="col-lg-8 col-sm-12">
+                        <form class="row row-cols-lg-auto g-3 align-items-center">
+                            <label for="staticEmail2" class="form-label">Saldo Actual</label>
+                            <div class="col-12">
+                                <input type="number" class="form-control" id="staticEmail2" placeholder="$$$$">
+                            </div>
+                            <label for="staticEmail2" class="form-label">Saldo a agregar</label>
+                            <div class="col-12">
+                                <input type="number" class="form-control" id="staticEmail2" placeholder="$$$$">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane" id="money-company">
+                <div class="row">
+                    <div class="col-lg-8 col-sm-12">
+                        <form class="row row-cols-lg-auto g-3 align-items-center">
+                            <label for="staticEmail2" class="form-label">Saldo Actual(Pautas)</label>
+                            <div class="col-12">
+                                <input type="number" class="form-control" id="staticEmail2" placeholder="$$$$">
+                            </div>
+                            <label for="staticEmail2" class="form-label">Saldo a agregar(Pautas)</label>
+                            <div class="col-12">
+                                <input type="number" class="form-control" id="staticEmail2" placeholder="$$$$">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end preview code-->
+        </div>
+        <!-- end tab-content-->
+
+    </div>
+    <!-- end card-body -->
+</div>

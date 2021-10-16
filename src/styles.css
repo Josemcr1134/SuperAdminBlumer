@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+.logo-bg.bg-primary,
+.btn-primary,
+.topnav-navbar-dark,
+.topnav-navbar-dark .nav-user {
+    background-color: #001037 !important;
+    border-color: #001037 !important;
+}

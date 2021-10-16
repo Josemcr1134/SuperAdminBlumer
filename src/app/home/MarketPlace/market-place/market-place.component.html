@@ -1,0 +1,209 @@
+<div class="card">
+    <div class="card-body">
+
+        <h4 class="header-title">MarketPlace</h4>
+        <p class="text-muted font-14">
+            Visualiza, filtra, aprueba las tiendas y productos de blumer
+        </p>
+
+        <ul class="nav nav-tabs nav-bordered mb-3">
+            <li class="nav-item">
+                <a href="#active_users" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+                    Pendientes de aprobación
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#basic-example-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+                    Tiendas
+                </a>
+            </li>
+        </ul>
+        <!-- end nav-->
+        <div class="tab-content">
+            <div class="tab-pane show active" id="active_users">
+                <div class="app-search">
+                    <form>
+                        <div class="mb-2 position-relative">
+                            <input type="text" class="form-control" placeholder="Buscar productos pendientes...">
+                            <span class="mdi mdi-magnify search-icon"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table class="table table-centered w-100 dt-responsive nowrap dataTable no-footer dtr-inline" id="products-datatable" role="grid" aria-describedby="products-datatable_info" style="width: 1313px;">
+                            <thead class="table-light">
+                                <tr role="row">
+
+                                    <th>Producto </th>
+                                    <th>Categoria</th>
+                                    <th>Ubicación</th>
+                                    <th>Precio</th>
+                                    <th>Descripción</th>
+                                    <th>Estado</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd">
+
+                                    <td class="sorting_1">
+                                        <img src="assets/images/products/product-6.jpg" alt="contact-img" title="contact-img" class="rounded me-3" height="48">
+                                        <p class="m-0 d-inline-block align-middle font-16">
+                                            <a href="apps-ecommerce-products-details.html" class="text-body">Adirondack Chair</a>
+
+                                        </p>
+                                    </td>
+
+                                    <td>
+                                        Aeron Chairs
+                                    </td>
+                                    <td>
+                                        Barranquilla/Colombia
+                                    </td>
+
+                                    <td>
+                                        $65.94
+                                    </td>
+
+                                    <td>
+                                        Sillas en perfecto estado
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-success">Disponible</span>
+                                    </td>
+
+                                    <td class="table-action">
+                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi text-primary  mdi-check-bold"></i></a>
+                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi text-danger mdi-delete"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+
+                                    <td class="sorting_1">
+                                        <img src="assets/images/products/product-1.jpg" alt="contact-img" title="contact-img" class="rounded me-3" height="48">
+                                        <p class="m-0 d-inline-block align-middle font-16">
+                                            <a href="apps-ecommerce-products-details.html" class="text-body">Amazing Modern Chair</a>
+
+                                        </p>
+                                    </td>
+                                    <td>
+                                        Aeron Chairs
+                                    </td>
+                                    <td>Cartagena/Colombia</td>
+
+                                    <td>
+                                        $148.66
+                                    </td>
+
+                                    <td>
+                                        Sillas de escritorio
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-danger">Unico</span>
+                                    </td>
+
+                                    <td class="table-action">
+                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi text-primary  mdi-check-bold"></i></a>
+                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi text-danger mdi-delete"></i></a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- end preview-->
+
+            <div class="tab-pane" id="basic-example-code">
+                <div class="app-search">
+                    <form>
+                        <div class="mb-2 position-relative">
+                            <input type="text" class="form-control" placeholder="Buscar tiendas....">
+                            <span class="mdi mdi-magnify search-icon"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-centered mb-0">
+                        <thead>
+                            <tr>
+                                <th>Usuario</th>
+                                <th>Contacto</th>
+                                <th>Correo electrónico</th>
+                                <th>Wallet</th>
+                                <th>Saldo </th>
+                                <th># de productos</th>
+                                <th># de seguidores</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-user">
+                                    <img src="assets/images/users/avatar-2.jpg" alt="table-user" class="me-2 rounded-circle"> Tienda 1
+                                </td>
+                                <td>+57 3004324233</td>
+                                <td>correo@gmail.com</td>
+                                <td>15 CP</td>
+                                <td>$ 50.000</td>
+                                <td>10 </td>
+                                <td>452</td>
+                                <td class="table-action">
+                                    <a [routerLink]="['/Dashboard/MarketPlace', 5, 'MarketProducts']" routerLinkActive="router-link-active" class="action-icon"> <i class="mdi mdi-book-arrow-up-outline text-primary"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-user">
+                                    <img src="assets/images/users/avatar-3.jpg" alt="table-user" class="me-2 rounded-circle"> Tienda 2
+                                </td>
+                                <td>+57 3212432431</td>
+                                <td>correo2@gmail.com</td>
+                                <td>45 CP</td>
+                                <td>$ 45.000</td>
+                                <td>23</td>
+                                <td>2322</td>
+                                <td class="table-action">
+                                    <a [routerLink]="['/Dashboard/MarketPlace', 5, 'MarketProducts']" routerLinkActive="router-link-active" class="action-icon"> <i class="mdi mdi-book-arrow-up-outline text-primary"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-user">
+                                    <img src="assets/images/users/avatar-4.jpg" alt="table-user" class="me-2 rounded-circle"> Tienda 3
+                                </td>
+                                <td>+57 3212432431</td>
+                                <td>correo3@gmail.com</td>
+                                <td>425 CP</td>
+                                <td>$ 425.000</td>
+                                <td>33</td>
+                                <td>3213</td>
+                                <td class="table-action">
+                                    <a [routerLink]="['/Dashboard/MarketPlace', 5, 'MarketProducts']" routerLinkActive="router-link-active" class="action-icon"> <i class="mdi mdi-book-arrow-up-outline text-primary"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-user">
+                                    <img src="assets/images/users/avatar-5.jpg" alt="table-user" class="me-2 rounded-circle"> Tienda 4
+                                </td>
+                                <td>+57 3212432431</td>
+                                <td>correo4@gmail.com</td>
+                                <td>31 CP</td>
+                                <td>$ 31.000</td>
+                                <td>13</td>
+                                <td>13000</td>
+                                <td class="table-action">
+                                    <a [routerLink]="['/Dashboard/MarketPlace', 5, 'MarketProducts']" routerLinkActive="router-link-active" class="action-icon"> <i class="mdi mdi-book-arrow-up-outline text-primary"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- end highlight-->
+            </div>
+            <!-- end preview code-->
+        </div>
+        <!-- end tab-content-->
+
+    </div>
+    <!-- end card body-->
+</div>
