@@ -13,6 +13,8 @@ import { CompanyComponent } from './Companys/company/company.component';
 import { SalesComponent } from './sales/sales.component';
 import { RouterModule } from '@angular/router';
 import { MarketProductsComponent } from './MarketPlace/market-products/market-products.component';
+import { InfluencersModule } from './Influencers/influencers.module';
+import { PreferencesQuestionsModule } from './preferences-questions/preferences-questions.module';
 
 
 
@@ -26,6 +28,7 @@ import { MarketProductsComponent } from './MarketPlace/market-products/market-pr
     SalesComponent,
     MarketProductsComponent,
     
+    
   ],
   exports:[
     HomeComponent
@@ -35,7 +38,9 @@ import { MarketProductsComponent } from './MarketPlace/market-products/market-pr
     SharedModule,
     MetricsModule, 
     TransactionsModule, 
-    UsersModule, 
+    UsersModule,
+    InfluencersModule, 
+    PreferencesQuestionsModule,
     RouterModule
   ]
 })

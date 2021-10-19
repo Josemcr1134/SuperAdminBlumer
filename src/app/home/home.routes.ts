@@ -16,6 +16,9 @@ import { SalesComponent } from './sales/sales.component';
 import { UserBdComponent } from './Users/user-bd/user-bd.component';
 import { MarketProductsComponent } from './MarketPlace/market-products/market-products.component';
 import { CompanyBDComponent } from './Companys/company-bd/company-bd.component';
+import { InfluencersDbComponent } from './Influencers/influencers-db/influencers-db.component';
+import { InfluencerDbComponent } from './Influencers/influencer-db/influencer-db.component';
+import { ListPQComponent } from './preferences-questions/list-p-q/list-p-q.component';
 
 
 const routes: Routes = [
@@ -36,6 +39,9 @@ const routes: Routes = [
             { path: 'Company', component: CompanyComponent, data:{title:'Empresas'} },
             { path: 'Company/:id', component: CompanyBDComponent, data:{title:'Empresa - Base de datos'} },
             { path: 'Sales', component: SalesComponent, data:{title:'Ventas'} },
+            { path: 'Influencers', component: InfluencersDbComponent, data:{title:'Influencers'} },
+            { path: 'Influencers/:id', component: InfluencerDbComponent, data:{title:'Influencer - Base de datos'} },
+            { path: 'Extras', component: ListPQComponent, data:{title:'Preguntas & Preferencias'} },
             { path: '**', component: GraphicDataComponent },
         ] },
    

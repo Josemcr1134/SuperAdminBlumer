@@ -1,0 +1,235 @@
+<div class="card">
+    <div class="card-body">
+
+        <h4 class="header-title">Preferencias | Gustos | Encuesta a empresa</h4>
+        <p class="text-muted font-14">
+            Visualiza, elimina y crealas
+        </p>
+
+        <ul class="nav nav-tabs nav-bordered mb-3">
+            <li class="nav-item">
+                <a href="#striped-rows-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+                    Gustos y preferencias
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#survey-tab" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+                    Encuesta
+                </a>
+            </li>
+        </ul>
+        <!-- end nav-->
+        <div class="tab-content">
+            <div class="tab-pane show active" id="striped-rows-preview">
+                <div class="table-responsive-md">
+                    <table class="table table-striped table-centered mb-0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Descripción</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>AC336 508 2157</td>
+                                <td>Deportes</td>
+                                <td class="table-action">
+                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-delete text-danger"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>SB646 473 2057</td>
+                                <td>Tecnología</td>
+                                <td class="table-action">
+                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi text-danger mdi-delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>DL281 308 0793</td>
+                                <td>Salud</td>
+                                <td class="table-action">
+                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi text-danger mdi-delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>CA269 714 6825</td>
+                                <td>Comida saludable</td>
+                                <td class="table-action">
+                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi  mdi-delete text-danger"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="row mt-2">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#new_preferences">Nuevos gustos</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end table-responsive-->
+            </div>
+            <div class="tab-pane" id="survey-tab">
+                <div class="table-responsive-md">
+                    <table class="table table-striped table-centered mb-0">
+                        <thead>
+                            <tr>
+
+                                <th>Pregunta</th>
+                                <th>Respuesta 1</th>
+                                <th>Respuesta 2</th>
+                                <th>Respuesta 3</th>
+                                <th>Respuesta 4</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>¿Pregunta 1?</td>
+                                <td>Respuesta 1</td>
+                                <td>Respuesta 2</td>
+                                <td>Respuesta 3</td>
+                                <td>Respuesta 4</td>
+                                <td class="table-action">
+                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-delete text-danger"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>¿Pregunta 2?</td>
+                                <td>Respuesta 1</td>
+                                <td>Respuesta 2</td>
+                                <td>Respuesta 3</td>
+                                <td>Respuesta 4</td>
+                                <td class="table-action">
+                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi text-danger mdi-delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>¿Pregunta 3?</td>
+                                <td>Respuesta 1</td>
+                                <td>Respuesta 2</td>
+                                <td>Respuesta 3</td>
+                                <td>Respuesta 4</td>
+                                <td class="table-action">
+                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi text-danger mdi-delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>¿Pregunta 4?</td>
+                                <td>Respuesta 1</td>
+                                <td>Respuesta 2</td>
+                                <td>Respuesta 3</td>
+                                <td>Respuesta 4</td>
+                                <td class="table-action">
+                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi  mdi-delete text-danger"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="row mt-2">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#new_question_survey">Nueva pregunta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end preview-->
+        </div>
+        <!-- end tab-content-->
+
+    </div>
+    <!-- end card body-->
+</div>
+
+
+
+<!-- NEW PREFERENCES AND CHOICES MODAL -->
+<div id="new_preferences" class="modal fade show" tabindex="-1" role="dialog" aria-modal="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="text-center modal-header bg-primary logo-bg mb-4">
+                <a href="index.html" class="text-success text-center">
+                    <span><img src="assets/images/logo-blumer-green.png" alt="" ></span>
+                </a>
+            </div>
+            <div class="modal-body">
+
+                <form class="ps-3 pe-3" action="#">
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Descripción</label>
+                        <input class="form-control" type="email" id="username" required="" placeholder="Escribe el nombre aqui...">
+                    </div>
+
+
+                    <div class="mb-3 text-center">
+                        <button class="btn btn-primary" type="submit">Guardar</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- NEW SURVEY QUESTION MODAL -->
+<div id="new_question_survey" class="modal fade show" tabindex="-1" role="dialog" aria-modal="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="text-center modal-header bg-primary logo-bg mb-4">
+                <a href="index.html" class="text-success text-center">
+                    <span><img src="assets/images/logo-blumer-green.png" alt="" ></span>
+                </a>
+            </div>
+            <div class="modal-body">
+
+                <form class="ps-3 pe-3" action="#">
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Pregunta</label>
+                        <input class="form-control" type="text" id="username" required="" placeholder="Escribe la pregunta aqui...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Respuesta 1</label>
+                        <input class="form-control" type="text" id="username" required="" placeholder="Escribe la opción 1 aqui...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Respuesta 2</label>
+                        <input class="form-control" type="text" id="username" required="" placeholder="Escribe la opción 2 aqui...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Respuesta 3</label>
+                        <input class="form-control" type="text" id="username" required="" placeholder="Escribe la opción 3 aqui...">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Respuesta 4</label>
+                        <input class="form-control" type="text" id="username" required="" placeholder="Escribe la opción 4 aqui...">
+                    </div>
+
+
+                    <div class="mb-3 text-center">
+                        <button class="btn btn-primary" type="submit">Guardar</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
